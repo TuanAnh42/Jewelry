@@ -18,6 +18,7 @@ builder.Services.AddControllers();
 
 
 
+
 // Configure JWT authentication
 var key = Encoding.ASCII.GetBytes("your secret key here");
 builder.Services.AddAuthentication(x =>
@@ -61,7 +62,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowOrigin");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

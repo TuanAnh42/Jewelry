@@ -24,8 +24,7 @@ namespace Project3.Models
         public DateTime? CreatedAt { get; set; }
         [Column("updated_at")]
         public DateTime? UpdatedAt { get; set; }
-        [Column("role")]
-        public string Role { get; set; }
+        
 
         public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 

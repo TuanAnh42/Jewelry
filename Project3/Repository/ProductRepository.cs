@@ -23,8 +23,12 @@ namespace Project3.Repository
             {
                 return await _dbContext.Products.FindAsync(id);
             }
+            public IEnumerable<Product> GetProductsByPriceRange(decimal minPrice, decimal maxPrice)
+            {
+                return _dbContext.Products.Where(p => p.Price >= minPrice && p.Price <= maxPrice).ToList();
+            }
 
-            public async Task<Product> CreateProductAsync(Product product)
+        public async Task<Product> CreateProductAsync(Product product)
             {
                 _dbContext.Products.Add(product);
                 await _dbContext.SaveChangesAsync();

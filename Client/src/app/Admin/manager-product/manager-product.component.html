@@ -37,13 +37,13 @@
     <div class="information ">
         <div *ngIf="products" class="products flex" [ngClass]="{ 'index': isIndexClass }">
             <div *ngFor="let product of products | paginate: { itemsPerPage: 8, currentPage: currentPage }" class="">
-                <div class="img_product"><img [src]="product.image" alt="{{ product.title }}" width="200"></div>
+                <div class="img_product"><img [src]="product.imageUrl" alt="{{ product.title }}" width="200"></div>
 
                 <h3>{{ product.title }}</h3>
                 <p>Price: {{ product.price }}</p>
 
-                <p>Category: {{ product.category }}</p>
-                <p>Rating: {{ product.rating.rate }}</p>
+                <p>Category: {{ product.categoryID }}</p>
+                <p>Rating: {{ product.quantity }}</p>
                 <p>In stock: {{ product.quantity }}</p>
                 <a routerLink="ProductDetail/{{product.id}}">View Details</a>
             </div>
@@ -63,7 +63,7 @@
                     <td>{{ product.id }}</td>
                     <td ><span ><p routerLink="ProductDetail/{{product.id}}">{{ product.title }}</p> <img routerLink="UpdateProduct/{{product.id}}"  src="../../../assets/img/svg/edit.svg" alt=""></span></td>
                     <td ><span ><p routerLink="ProductDetail/{{product.id}}">{{ product.price }}</p><img routerLink="UpdateProduct/{{product.id}}"  src="../../../assets/img/svg/edit.svg" alt=""></span></td>
-                    <td><span>{{ product.rating.rate  }}<img routerLink="ImportProducts/{{product.id}}"  src="../../../assets/img/svg/add.svg" alt=""></span></td>
+                    <td><span>{{ product.quantity  }}<img routerLink="ImportProducts/{{product.id}}"  src="../../../assets/img/svg/add.svg" alt=""></span></td>
                 </tr>
 
             </tbody>

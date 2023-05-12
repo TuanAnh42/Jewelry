@@ -85,10 +85,7 @@ namespace Project3.Models {
                     .HasDefaultValueSql("(getdate())")
                     .HasColumnType("datetime")
                     .HasColumnName("updated_at");
-                entity.Property(e => e.Role)
-                    .HasMaxLength(20)
-                    .IsUnicode(false)
-                    .HasColumnName("role");
+                
             });
 
             modelBuilder.Entity<Brand>(entity =>
@@ -322,6 +319,10 @@ namespace Project3.Models {
                 entity.Property(e => e.Price)
                     .HasColumnType("decimal(10, 2)")
                     .HasColumnName("price");
+                entity.Property(e => e.Quantity)
+                    .HasColumnType("int")
+                    .HasColumnName("quantity");
+
                 entity.Property(e => e.PromotionId).HasColumnName("promotion_id");
                 entity.Property(e => e.UpdatedAt)
                     .HasDefaultValueSql("(getdate())")

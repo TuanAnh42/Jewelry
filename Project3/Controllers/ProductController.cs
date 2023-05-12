@@ -18,6 +18,16 @@ namespace Project3.Controllers
             _productRepository = productRepository;
         }
 
+        [HttpGet("byprice")]
+        public IActionResult GetProductsByPriceRange([FromQuery] decimal minPrice, [FromQuery] decimal maxPrice)
+        {
+            var products = _productRepository.GetProductsByPriceRange(minPrice, maxPrice);
+            if (products == null || !products.Any())
+            {
+                return NotFound();
+            }
+            return Ok(products);
+        }
 
         [HttpGet]
         [Produces("application/json")]

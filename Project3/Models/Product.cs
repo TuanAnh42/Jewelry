@@ -23,6 +23,9 @@ namespace Project3.Models
         [Column("image_url")]
 
         public string? ImageUrl { get; set; }
+        [Column("quantity")]
+
+        public string? Quantity{ get; set; }
         [Column("category_id")]
 
         [Required(ErrorMessage = "Category is required")]

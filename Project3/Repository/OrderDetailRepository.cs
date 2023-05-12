@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Project3.Interface;
 using Project3.Models;
 
 namespace Project3.Repository
 {
-    public class OrderDetailRepository
+    public class OrderDetailRepository :IOrderDetailRepository
     {
         private readonly DatabaseContext _dbContext;
         public OrderDetailRepository(DatabaseContext context)

@@ -25,7 +25,7 @@ namespace Project3.Models
         public string? ImageUrl { get; set; }
         [Column("quantity")]
 
-        public string? Quantity{ get; set; }
+        public int? Quantity{ get; set; }
         [Column("category_id")]
 
         [Required(ErrorMessage = "Category is required")]

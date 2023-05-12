@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZzNOeEFvyzQTJnPWYkri1wx+FKm5u11/vV1ZnM0wbFN/+1ud6R2kcTtvIbpBd4Vw5f3z/PBiNNps+aotfyK00Q==",
+  "dgSpecHash": "ULB/57YYAXCMIW/l59PHQdIi7VNCrIe4QL9wFWh4lGgvaVooa5cF+3twBn9QmiAqcSj9qh7eC+WBEhEM9bL+kw==",
   "success": true,
-  "projectFilePath": "C:\\project\\Jewelry\\Project3\\Project3.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\OneDrive - Hanoi University of Science and Technology\\Desktop\\project\\Jewelry\\Project3\\Project3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

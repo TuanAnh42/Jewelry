@@ -11619,11 +11619,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\project\\Jewelry\\Project3\\Project3.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\OneDrive - Hanoi University of Science and Technology\\Desktop\\project\\Jewelry\\Project3\\Project3.csproj",
       "projectName": "Project3",
-      "projectPath": "C:\\project\\Jewelry\\Project3\\Project3.csproj",
+      "projectPath": "C:\\Users\\DELL\\OneDrive - Hanoi University of Science and Technology\\Desktop\\project\\Jewelry\\Project3\\Project3.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\project\\Jewelry\\Project3\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\OneDrive - Hanoi University of Science and Technology\\Desktop\\project\\Jewelry\\Project3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
